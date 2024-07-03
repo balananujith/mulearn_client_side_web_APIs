@@ -17,12 +17,14 @@ submitBtn.addEventListener('click', () => {
   localStorage.setItem('name', name);
   nameDisplayCheck(name);
   updateStory(name);
+  changeBackgroundColor('#dcedc8'); // Change background to a different color
 });
 
 forgetBtn.addEventListener('click', () => {
   localStorage.removeItem('name');
   nameDisplayCheck('');
   updateStory('');
+  changeBackgroundColor('#ffcdd2'); // Change background to a different color
 });
 
 function nameDisplayCheck(name) {
@@ -47,6 +49,10 @@ function updateStory(name) {
     userNameSpan.textContent = '';
     storyParagraph.textContent = `In a bustling city, there lived an inquisitive person. With an insatiable thirst for knowledge and a spirit for adventure, they explored the vibrant streets and hidden gems, uncovering stories and experiences that would last a lifetime...`;
   }
+}
+
+function changeBackgroundColor(color) {
+  document.body.style.backgroundColor = color;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
