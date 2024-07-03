@@ -71,3 +71,12 @@ form div {
 footer {
   margin-top: auto; /* Push the footer to the bottom */
 }
+
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #cccccc;
+}
