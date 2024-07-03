@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal greeting</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Our website</h1>
+      <form>
+        <div class="remember">
+          <label for="entername">Enter your name:</label>
+          <input id="entername" type="text" required>
+          <input id="submitname" type="submit" value="Say hello">
+        </div>
+        <div class="forget">
+          <label for="forgetname">Want me to forget you?</label>
+          <input id="forgetname" type="reset" value="Forget">
+        </div>
+      </form>
+    </header>
+    <main>
+      <p class="personal-greeting">Welcome to our website.</p>
+      <p id="story">In a bustling city, there lived an inquisitive person named <span id="user-name"></span>. With an insatiable thirst for knowledge and a spirit for adventure, <span id="user-name"></span> explored the vibrant streets and hidden gems, uncovering stories and experiences that would last a lifetime...</p>
+    </main>
+    <footer>
+      <p>Copyright nobody. Use the code as you like.</p>
+    </footer>
+  </body>
+</html>
